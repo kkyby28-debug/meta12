@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .account-book {
+            display: grid;
+            /* 4개의 컬럼(열)을 동일한 비율로(1fr)로 생성 */
+            grid-template-columns: repeat(7, 1fr);
+            max-width: 1200px;
+            border-top: 1px solid gray;
+            border-left: 1px solid gray;
+        }
+        .cell {
+            border-right: 1px solid gray;
+            border-bottom: 1px solid gray;
+            padding: 10px;
+            font-size: 14px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+        }
+        .달력 {
+            background-color: cornflowerblue;
+            grid-column: span 7;
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .요일 {
+            background-color: darkgrey;
+        }
+        .일 {
+            color: red;
+            font-weight: bold;
+            background-color: rgb(247, 176, 151);
+        }
+        .토 {
+            color: blue;
+            font-weight: bold;
+            background-color: rgb(247, 176, 151);
+        }
+        .공휴일 {
+            color: red;
+            font-weight: bold;
+        }
+        .과정 {
+            font-size: 15px;
+            margin-top: 6px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h2>월간 일정표</h2>
+    <div class="account-book">
+        <div class="cell 달력">2025년 1월</div>
+
+        <div class="cell 일 요일">일</div>
+        <div class="cell 요일">월</div>
+        <div class="cell 요일">화</div>
+        <div class="cell 요일">수</div>
+        <div class="cell 요일">목</div>
+        <div class="cell 요일">금</div>
+        <div class="cell 토 요일">토</div>
+
+        <div class="cell 일"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+
+        <div class="cell 공휴일">1
+            <div class="과정">신년</div>
+        </div>
+        <div class="cell">2
+            <div class="과정">휴강</div>
+        </div>
+        <div class="cell 토">3</div>
+        <div class="cell 일">4</div>
+        <div class="cell">5
+            <div class="과정">HTML</div>
+        </div>
+        <div class="cell">6
+            <div class="과정">HTML</div>
+        </div>
+        <div class="cell">7
+            <div class="과정">CSS</div>
+        </div>
+        <div class="cell">8
+            <div class="과정">CSS</div>
+        </div>
+        <div class="cell">9
+            <div class="과정">CSS</div>
+        </div>
+        <div class="cell 토">10</div>
+        <div class="cell 일">11</div>
+        <div class="cell">12
+            <div class="과정">CSS</div>
+        </div>
+        <div class="cell">13
+            <div class="과정">개인웹페이지설계</div>
+        </div>
+        <div class="cell">14
+            <div class="과정">Javascript</div>
+        </div>
+        <div class="cell">15
+            <div class="과정">Javascript</div>
+        </div>
+        <div class="cell">16
+            <div class="과정">Javascript</div>
+        </div>
+        <div class="cell 토">17</div>
+        <div class="cell 일">18</div>
+        <div class="cell">19
+            <div class="과정">Javascript</div>
+        </div>
+        <div class="cell">20
+            <div class="과정">Javascript</div>
+        </div>
+        <div class="cell">21
+            <div class="과정">개인웹페이지만들기</div>
+        </div>
+        <div class="cell">22
+            <div class="과정">개인웹페이지만들기</div>
+        </div>
+        <div class="cell">23
+            <div class="과정">개인웹페이지만들기</div>
+        </div>
+        <div class="cell 토">24</div>
+        <div class="cell 일">25</div>
+        <div class="cell">26
+            <div class="과정">과제 마무리 테스트</div>
+        </div>
+        <div class="cell">27
+            <div class="과정">자바</div>
+        </div>
+        <div class="cell">28
+            <div class="과정">자바</div>
+        </div>
+        <div class="cell">29
+            <div class="과정">자바</div>
+        </div>
+        <div class="cell">30
+            <div class="과정">자바</div>
+        </div>
+        <div class="cell 토">31</div>
+    </div>
+</body>
+</html>
